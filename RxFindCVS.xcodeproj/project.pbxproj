@@ -10,9 +10,13 @@
 		1E88635E27FA613B001701DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E88635D27FA613B001701DA /* AppDelegate.swift */; };
 		1E88636027FA613B001701DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E88635F27FA613B001701DA /* SceneDelegate.swift */; };
 		1E88636227FA613B001701DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E88636127FA613B001701DA /* ViewController.swift */; };
-		1E88636527FA613B001701DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E88636327FA613B001701DA /* Main.storyboard */; };
 		1E88636727FA613C001701DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E88636627FA613C001701DA /* Assets.xcassets */; };
 		1E88636A27FA613C001701DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E88636827FA613C001701DA /* LaunchScreen.storyboard */; };
+		1E88637327FA61FC001701DA /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 1E88637227FA61FC001701DA /* .swiftlint.yml */; };
+		1E88637627FA622B001701DA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1E88637527FA622B001701DA /* SnapKit */; };
+		1E88637927FA6241001701DA /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 1E88637827FA6241001701DA /* RxCocoa */; };
+		1E88637B27FA6241001701DA /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 1E88637A27FA6241001701DA /* RxRelay */; };
+		1E88637D27FA6241001701DA /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1E88637C27FA6241001701DA /* RxSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +24,10 @@
 		1E88635D27FA613B001701DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E88635F27FA613B001701DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1E88636127FA613B001701DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1E88636427FA613B001701DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1E88636627FA613C001701DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E88636927FA613C001701DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E88636B27FA613C001701DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E88637227FA61FC001701DA /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E88637B27FA6241001701DA /* RxRelay in Frameworks */,
+				1E88637927FA6241001701DA /* RxCocoa in Frameworks */,
+				1E88637D27FA6241001701DA /* RxSwift in Frameworks */,
+				1E88637627FA622B001701DA /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +48,7 @@
 		1E88635127FA613B001701DA = {
 			isa = PBXGroup;
 			children = (
+				1E88637227FA61FC001701DA /* .swiftlint.yml */,
 				1E88635C27FA613B001701DA /* RxFindCVS */,
 				1E88635B27FA613B001701DA /* Products */,
 			);
@@ -59,7 +68,6 @@
 				1E88635D27FA613B001701DA /* AppDelegate.swift */,
 				1E88635F27FA613B001701DA /* SceneDelegate.swift */,
 				1E88636127FA613B001701DA /* ViewController.swift */,
-				1E88636327FA613B001701DA /* Main.storyboard */,
 				1E88636627FA613C001701DA /* Assets.xcassets */,
 				1E88636827FA613C001701DA /* LaunchScreen.storyboard */,
 				1E88636B27FA613C001701DA /* Info.plist */,
@@ -77,12 +85,19 @@
 				1E88635627FA613B001701DA /* Sources */,
 				1E88635727FA613B001701DA /* Frameworks */,
 				1E88635827FA613B001701DA /* Resources */,
+				1E88637127FA61D8001701DA /* Swift Lint */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = RxFindCVS;
+			packageProductDependencies = (
+				1E88637527FA622B001701DA /* SnapKit */,
+				1E88637827FA6241001701DA /* RxCocoa */,
+				1E88637A27FA6241001701DA /* RxRelay */,
+				1E88637C27FA6241001701DA /* RxSwift */,
+			);
 			productName = RxFindCVS;
 			productReference = 1E88635A27FA613B001701DA /* RxFindCVS.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +126,10 @@
 				Base,
 			);
 			mainGroup = 1E88635127FA613B001701DA;
+			packageReferences = (
+				1E88637427FA622B001701DA /* XCRemoteSwiftPackageReference "SnapKit" */,
+				1E88637727FA6241001701DA /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 1E88635B27FA613B001701DA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,13 +144,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E88637327FA61FC001701DA /* .swiftlint.yml in Resources */,
 				1E88636A27FA613C001701DA /* LaunchScreen.storyboard in Resources */,
 				1E88636727FA613C001701DA /* Assets.xcassets in Resources */,
-				1E88636527FA613B001701DA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E88637127FA61D8001701DA /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1E88635627FA613B001701DA /* Sources */ = {
@@ -147,14 +187,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1E88636327FA613B001701DA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1E88636427FA613B001701DA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1E88636827FA613C001701DA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,7 +326,7 @@
 				INFOPLIST_FILE = RxFindCVS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +354,7 @@
 				INFOPLIST_FILE = RxFindCVS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -360,6 +392,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1E88637427FA622B001701DA /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		1E88637727FA6241001701DA /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1E88637527FA622B001701DA /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E88637427FA622B001701DA /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		1E88637827FA6241001701DA /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E88637727FA6241001701DA /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		1E88637A27FA6241001701DA /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E88637727FA6241001701DA /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		1E88637C27FA6241001701DA /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E88637727FA6241001701DA /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1E88635227FA613B001701DA /* Project object */;
 }
