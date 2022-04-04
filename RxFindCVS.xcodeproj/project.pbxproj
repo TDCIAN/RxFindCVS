@@ -54,6 +54,9 @@
 		1E88641027FA6A58001701DA /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E88640F27FA6A58001701DA /* libxml2.tbd */; };
 		1E88641227FA6A62001701DA /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E88641127FA6A62001701DA /* libsqlite3.tbd */; };
 		1E88641427FA6B02001701DA /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E88641327FA6B02001701DA /* Metal.framework */; };
+		1EA601D027FBB78D00AB56EF /* LocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA601CF27FBB78D00AB56EF /* LocationData.swift */; };
+		1EA601D327FBB7C400AB56EF /* KLDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA601D227FBB7C400AB56EF /* KLDocument.swift */; };
+		1EA601D527FBB89C00AB56EF /* DetailLitCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA601D427FBB89C00AB56EF /* DetailLitCellData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +113,9 @@
 		1E88640F27FA6A58001701DA /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		1E88641127FA6A62001701DA /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		1E88641327FA6B02001701DA /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		1EA601CF27FBB78D00AB56EF /* LocationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationData.swift; sourceTree = "<group>"; };
+		1EA601D227FBB7C400AB56EF /* KLDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLDocument.swift; sourceTree = "<group>"; };
+		1EA601D427FBB89C00AB56EF /* DetailLitCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailLitCellData.swift; sourceTree = "<group>"; };
 		216FC79CEB8836CA69A44B9F /* Pods-RxFindCVS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxFindCVS.debug.xcconfig"; path = "Target Support Files/Pods-RxFindCVS/Pods-RxFindCVS.debug.xcconfig"; sourceTree = "<group>"; };
 		A0EEE70E4B7AC5AE66FCC376 /* Pods-RxFindCVS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxFindCVS.release.xcconfig"; path = "Target Support Files/Pods-RxFindCVS/Pods-RxFindCVS.release.xcconfig"; sourceTree = "<group>"; };
 		F505A92E445D31C6968C3A45 /* Pods_RxFindCVS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxFindCVS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,6 +175,7 @@
 				1E88636627FA613C001701DA /* Assets.xcassets */,
 				1E88636827FA613C001701DA /* LaunchScreen.storyboard */,
 				1E88636B27FA613C001701DA /* Info.plist */,
+				1EA601D127FBB79300AB56EF /* Entities */,
 			);
 			path = RxFindCVS;
 			sourceTree = "<group>";
@@ -230,6 +237,16 @@
 				1E8863DA27FA6583001701DA /* MTMapCircle.h */,
 			);
 			path = Headers;
+			sourceTree = "<group>";
+		};
+		1EA601D127FBB79300AB56EF /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				1EA601CF27FBB78D00AB56EF /* LocationData.swift */,
+				1EA601D227FBB7C400AB56EF /* KLDocument.swift */,
+				1EA601D427FBB89C00AB56EF /* DetailLitCellData.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		5D5B85AD938A856E49A2A6C1 /* Frameworks */ = {
@@ -429,8 +446,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EA601D027FBB78D00AB56EF /* LocationData.swift in Sources */,
+				1EA601D327FBB7C400AB56EF /* KLDocument.swift in Sources */,
 				1E88636227FA613B001701DA /* ViewController.swift in Sources */,
 				1E88635E27FA613B001701DA /* AppDelegate.swift in Sources */,
+				1EA601D527FBB89C00AB56EF /* DetailLitCellData.swift in Sources */,
 				1E88636027FA613B001701DA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
