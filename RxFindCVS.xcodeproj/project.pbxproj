@@ -15,8 +15,11 @@
 		1E08114127FD628F00BBE12B /* LocalAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E08114027FD628F00BBE12B /* LocalAPI.swift */; };
 		1E08114327FD637F00BBE12B /* LocalNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E08114227FD637F00BBE12B /* LocalNetwork.swift */; };
 		1E08114527FD65B800BBE12B /* LocationInformationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E08114427FD65B800BBE12B /* LocationInformationModel.swift */; };
-		1E08116827FD73EB00BBE12B /* RxFindCVSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E08116727FD73EB00BBE12B /* RxFindCVSTests.swift */; };
+		1E08116827FD73EB00BBE12B /* LocationInformationModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E08116727FD73EB00BBE12B /* LocationInformationModelTests.swift */; };
 		1E08116F27FD742500BBE12B /* LocalNetworkStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E08116E27FD742500BBE12B /* LocalNetworkStub.swift */; };
+		1E08117127FD754300BBE12B /* networkDummy.json in Resources */ = {isa = PBXBuildFile; fileRef = 1E08117027FD754300BBE12B /* networkDummy.json */; };
+		1E08117327FD75FC00BBE12B /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E08117227FD75FC00BBE12B /* Dummy.swift */; };
+		1E08117527FD79ED00BBE12B /* LocationInformationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E08117427FD79ED00BBE12B /* LocationInformationViewModelTests.swift */; };
 		1E88635E27FA613B001701DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E88635D27FA613B001701DA /* AppDelegate.swift */; };
 		1E88636027FA613B001701DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E88635F27FA613B001701DA /* SceneDelegate.swift */; };
 		1E88636227FA613B001701DA /* LocationInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E88636127FA613B001701DA /* LocationInformationViewController.swift */; };
@@ -86,8 +89,11 @@
 		1E08114227FD637F00BBE12B /* LocalNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNetwork.swift; sourceTree = "<group>"; };
 		1E08114427FD65B800BBE12B /* LocationInformationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInformationModel.swift; sourceTree = "<group>"; };
 		1E08116527FD73EB00BBE12B /* RxFindCVSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxFindCVSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E08116727FD73EB00BBE12B /* RxFindCVSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxFindCVSTests.swift; sourceTree = "<group>"; };
+		1E08116727FD73EB00BBE12B /* LocationInformationModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInformationModelTests.swift; sourceTree = "<group>"; };
 		1E08116E27FD742500BBE12B /* LocalNetworkStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNetworkStub.swift; sourceTree = "<group>"; };
+		1E08117027FD754300BBE12B /* networkDummy.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = networkDummy.json; sourceTree = "<group>"; };
+		1E08117227FD75FC00BBE12B /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
+		1E08117427FD79ED00BBE12B /* LocationInformationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInformationViewModelTests.swift; sourceTree = "<group>"; };
 		1E88635A27FA613B001701DA /* RxFindCVS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxFindCVS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E88635D27FA613B001701DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E88635F27FA613B001701DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -205,8 +211,11 @@
 		1E08116627FD73EB00BBE12B /* RxFindCVSTests */ = {
 			isa = PBXGroup;
 			children = (
-				1E08116727FD73EB00BBE12B /* RxFindCVSTests.swift */,
+				1E08116727FD73EB00BBE12B /* LocationInformationModelTests.swift */,
+				1E08117427FD79ED00BBE12B /* LocationInformationViewModelTests.swift */,
 				1E08116E27FD742500BBE12B /* LocalNetworkStub.swift */,
+				1E08117227FD75FC00BBE12B /* Dummy.swift */,
+				1E08117027FD754300BBE12B /* networkDummy.json */,
 			);
 			path = RxFindCVSTests;
 			sourceTree = "<group>";
@@ -433,7 +442,7 @@
 			);
 			mainGroup = 1E88635127FA613B001701DA;
 			packageReferences = (
-				1E88637427FA622B001701DA /* XCRemoteSwiftPackageReference "SnapKit.git" */,
+				1E88637427FA622B001701DA /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 1E88635B27FA613B001701DA /* Products */;
 			projectDirPath = "";
@@ -450,6 +459,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E08117127FD754300BBE12B /* networkDummy.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,8 +606,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E08117527FD79ED00BBE12B /* LocationInformationViewModelTests.swift in Sources */,
 				1E08116F27FD742500BBE12B /* LocalNetworkStub.swift in Sources */,
-				1E08116827FD73EB00BBE12B /* RxFindCVSTests.swift in Sources */,
+				1E08117327FD75FC00BBE12B /* Dummy.swift in Sources */,
+				1E08116827FD73EB00BBE12B /* LocationInformationModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -905,7 +917,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		1E88637427FA622B001701DA /* XCRemoteSwiftPackageReference "SnapKit.git" */ = {
+		1E88637427FA622B001701DA /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -918,7 +930,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		1E88637527FA622B001701DA /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1E88637427FA622B001701DA /* XCRemoteSwiftPackageReference "SnapKit.git" */;
+			package = 1E88637427FA622B001701DA /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
