@@ -15,6 +15,8 @@
 		1E08114127FD628F00BBE12B /* LocalAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E08114027FD628F00BBE12B /* LocalAPI.swift */; };
 		1E08114327FD637F00BBE12B /* LocalNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E08114227FD637F00BBE12B /* LocalNetwork.swift */; };
 		1E08114527FD65B800BBE12B /* LocationInformationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E08114427FD65B800BBE12B /* LocationInformationModel.swift */; };
+		1E08116827FD73EB00BBE12B /* RxFindCVSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E08116727FD73EB00BBE12B /* RxFindCVSTests.swift */; };
+		1E08116F27FD742500BBE12B /* LocalNetworkStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E08116E27FD742500BBE12B /* LocalNetworkStub.swift */; };
 		1E88635E27FA613B001701DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E88635D27FA613B001701DA /* AppDelegate.swift */; };
 		1E88636027FA613B001701DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E88635F27FA613B001701DA /* SceneDelegate.swift */; };
 		1E88636227FA613B001701DA /* LocationInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E88636127FA613B001701DA /* LocationInformationViewController.swift */; };
@@ -62,7 +64,18 @@
 		1EA601D327FBB7C400AB56EF /* KLDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA601D227FBB7C400AB56EF /* KLDocument.swift */; };
 		1EA601D527FBB89C00AB56EF /* DetailListCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA601D427FBB89C00AB56EF /* DetailListCellData.swift */; };
 		1ED3FD8227FD1CAE006E631E /* LocationInformationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED3FD8127FD1CAE006E631E /* LocationInformationViewModel.swift */; };
+		C37B5ABE948E09CBB152C1F9 /* Pods_RxFindCVSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 441322D303FF26CF9967BFCE /* Pods_RxFindCVSTests.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E08116927FD73EB00BBE12B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E88635227FA613B001701DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E88635927FA613B001701DA;
+			remoteInfo = RxFindCVS;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1E08113727FD234000BBE12B /* MTMapViewError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTMapViewError.swift; sourceTree = "<group>"; };
@@ -72,6 +85,9 @@
 		1E08114027FD628F00BBE12B /* LocalAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAPI.swift; sourceTree = "<group>"; };
 		1E08114227FD637F00BBE12B /* LocalNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNetwork.swift; sourceTree = "<group>"; };
 		1E08114427FD65B800BBE12B /* LocationInformationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInformationModel.swift; sourceTree = "<group>"; };
+		1E08116527FD73EB00BBE12B /* RxFindCVSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxFindCVSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E08116727FD73EB00BBE12B /* RxFindCVSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxFindCVSTests.swift; sourceTree = "<group>"; };
+		1E08116E27FD742500BBE12B /* LocalNetworkStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNetworkStub.swift; sourceTree = "<group>"; };
 		1E88635A27FA613B001701DA /* RxFindCVS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxFindCVS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E88635D27FA613B001701DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E88635F27FA613B001701DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,11 +146,22 @@
 		1EA601D427FBB89C00AB56EF /* DetailListCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListCellData.swift; sourceTree = "<group>"; };
 		1ED3FD8127FD1CAE006E631E /* LocationInformationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInformationViewModel.swift; sourceTree = "<group>"; };
 		216FC79CEB8836CA69A44B9F /* Pods-RxFindCVS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxFindCVS.debug.xcconfig"; path = "Target Support Files/Pods-RxFindCVS/Pods-RxFindCVS.debug.xcconfig"; sourceTree = "<group>"; };
+		441322D303FF26CF9967BFCE /* Pods_RxFindCVSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxFindCVSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		908E88EEEC7D57DF7E984124 /* Pods-RxFindCVSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxFindCVSTests.release.xcconfig"; path = "Target Support Files/Pods-RxFindCVSTests/Pods-RxFindCVSTests.release.xcconfig"; sourceTree = "<group>"; };
 		A0EEE70E4B7AC5AE66FCC376 /* Pods-RxFindCVS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxFindCVS.release.xcconfig"; path = "Target Support Files/Pods-RxFindCVS/Pods-RxFindCVS.release.xcconfig"; sourceTree = "<group>"; };
 		F505A92E445D31C6968C3A45 /* Pods_RxFindCVS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxFindCVS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F76C498BEFE939AD334D2C74 /* Pods-RxFindCVSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxFindCVSTests.debug.xcconfig"; path = "Target Support Files/Pods-RxFindCVSTests/Pods-RxFindCVSTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1E08116227FD73EB00BBE12B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C37B5ABE948E09CBB152C1F9 /* Pods_RxFindCVSTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1E88635727FA613B001701DA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -175,11 +202,21 @@
 			path = LocationInfo;
 			sourceTree = "<group>";
 		};
+		1E08116627FD73EB00BBE12B /* RxFindCVSTests */ = {
+			isa = PBXGroup;
+			children = (
+				1E08116727FD73EB00BBE12B /* RxFindCVSTests.swift */,
+				1E08116E27FD742500BBE12B /* LocalNetworkStub.swift */,
+			);
+			path = RxFindCVSTests;
+			sourceTree = "<group>";
+		};
 		1E88635127FA613B001701DA = {
 			isa = PBXGroup;
 			children = (
 				1E88637227FA61FC001701DA /* .swiftlint.yml */,
 				1E88635C27FA613B001701DA /* RxFindCVS */,
+				1E08116627FD73EB00BBE12B /* RxFindCVSTests */,
 				1E88635B27FA613B001701DA /* Products */,
 				E0817BF596E16689A2D4700D /* Pods */,
 				5D5B85AD938A856E49A2A6C1 /* Frameworks */,
@@ -190,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				1E88635A27FA613B001701DA /* RxFindCVS.app */,
+				1E08116527FD73EB00BBE12B /* RxFindCVSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -304,6 +342,7 @@
 				1E88640527FA6A0F001701DA /* OpenGLES.framework */,
 				1E8863C127FA6583001701DA /* DaumMap.embeddedframework */,
 				F505A92E445D31C6968C3A45 /* Pods_RxFindCVS.framework */,
+				441322D303FF26CF9967BFCE /* Pods_RxFindCVSTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -313,6 +352,8 @@
 			children = (
 				216FC79CEB8836CA69A44B9F /* Pods-RxFindCVS.debug.xcconfig */,
 				A0EEE70E4B7AC5AE66FCC376 /* Pods-RxFindCVS.release.xcconfig */,
+				F76C498BEFE939AD334D2C74 /* Pods-RxFindCVSTests.debug.xcconfig */,
+				908E88EEEC7D57DF7E984124 /* Pods-RxFindCVSTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -320,6 +361,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1E08116427FD73EB00BBE12B /* RxFindCVSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E08116D27FD73EB00BBE12B /* Build configuration list for PBXNativeTarget "RxFindCVSTests" */;
+			buildPhases = (
+				4DF84D7C108CFD3FA427AC37 /* [CP] Check Pods Manifest.lock */,
+				1E08116127FD73EB00BBE12B /* Sources */,
+				1E08116227FD73EB00BBE12B /* Frameworks */,
+				1E08116327FD73EB00BBE12B /* Resources */,
+				17C568CB913F48A342238E2E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E08116A27FD73EB00BBE12B /* PBXTargetDependency */,
+			);
+			name = RxFindCVSTests;
+			productName = RxFindCVSTests;
+			productReference = 1E08116527FD73EB00BBE12B /* RxFindCVSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		1E88635927FA613B001701DA /* RxFindCVS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1E88636E27FA613C001701DA /* Build configuration list for PBXNativeTarget "RxFindCVS" */;
@@ -353,6 +414,10 @@
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					1E08116427FD73EB00BBE12B = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 1E88635927FA613B001701DA;
+					};
 					1E88635927FA613B001701DA = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -368,18 +433,26 @@
 			);
 			mainGroup = 1E88635127FA613B001701DA;
 			packageReferences = (
-				1E88637427FA622B001701DA /* XCRemoteSwiftPackageReference "SnapKit" */,
+				1E88637427FA622B001701DA /* XCRemoteSwiftPackageReference "SnapKit.git" */,
 			);
 			productRefGroup = 1E88635B27FA613B001701DA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				1E88635927FA613B001701DA /* RxFindCVS */,
+				1E08116427FD73EB00BBE12B /* RxFindCVSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1E08116327FD73EB00BBE12B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1E88635827FA613B001701DA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -420,6 +493,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		17C568CB913F48A342238E2E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxFindCVSTests/Pods-RxFindCVSTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxFindCVSTests/Pods-RxFindCVSTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxFindCVSTests/Pods-RxFindCVSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		1E88637127FA61D8001701DA /* Swift Lint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -437,6 +527,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		4DF84D7C108CFD3FA427AC37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxFindCVSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 		57F53B8002330107C1E25901 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -480,6 +592,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1E08116127FD73EB00BBE12B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E08116F27FD742500BBE12B /* LocalNetworkStub.swift in Sources */,
+				1E08116827FD73EB00BBE12B /* RxFindCVSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1E88635627FA613B001701DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -503,6 +624,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1E08116A27FD73EB00BBE12B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E88635927FA613B001701DA /* RxFindCVS */;
+			targetProxy = 1E08116927FD73EB00BBE12B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		1E88636827FA613C001701DA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -515,6 +644,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1E08116B27FD73EB00BBE12B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F76C498BEFE939AD334D2C74 /* Pods-RxFindCVSTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4FTFKXF8N5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeongminkim.RxFindCVSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxFindCVS.app/RxFindCVS";
+			};
+			name = Debug;
+		};
+		1E08116C27FD73EB00BBE12B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 908E88EEEC7D57DF7E984124 /* Pods-RxFindCVSTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4FTFKXF8N5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeongminkim.RxFindCVSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxFindCVS.app/RxFindCVS";
+			};
+			name = Release;
+		};
 		1E88636C27FA613C001701DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -708,6 +875,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1E08116D27FD73EB00BBE12B /* Build configuration list for PBXNativeTarget "RxFindCVSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E08116B27FD73EB00BBE12B /* Debug */,
+				1E08116C27FD73EB00BBE12B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1E88635527FA613B001701DA /* Build configuration list for PBXProject "RxFindCVS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -729,7 +905,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		1E88637427FA622B001701DA /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		1E88637427FA622B001701DA /* XCRemoteSwiftPackageReference "SnapKit.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -742,7 +918,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		1E88637527FA622B001701DA /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1E88637427FA622B001701DA /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = 1E88637427FA622B001701DA /* XCRemoteSwiftPackageReference "SnapKit.git" */;
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */

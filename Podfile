@@ -9,4 +9,14 @@ target 'RxFindCVS' do
   pod 'Kingfisher', '~> 7.0'
   pod 'RxSwift', '6.5.0'
   pod 'RxCocoa', '6.5.0'
+  
+  target 'RxFindCVSTests' do
+    inherit! :search_paths
+    # Pods for testing
+    pod 'Stubber'
+    pod 'Nimble'
+    pod 'RxBlocking'
+    pod 'RxTest'
+  end
+    
 end
