@@ -9,6 +9,8 @@ import UIKit
 import SnapKit
 
 class DetailListCell: UITableViewCell {
+    static let identifier = "DetailListCell"
+    
     let placeNameLabel = UILabel()
     let addressLabel = UILabel()
     let distanceLabel = UILabel()
