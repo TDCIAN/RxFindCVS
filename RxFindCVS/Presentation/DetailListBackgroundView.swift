@@ -39,7 +39,7 @@ class DetailListBackgroundView: UIView {
         addSubview(statusLabel)
         statusLabel.snp.makeConstraints {
             $0.center.equalToSuperview()
-            $0.leading.trailing.equalToSuperview().inset(20)
+//            $0.leading.trailing.equalToSuperview().inset(20)
         }
     }
 }

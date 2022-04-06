@@ -46,7 +46,12 @@ class LocationInformationViewController: UIViewController {
         
         viewModel.detailListCellData
             .drive(detailList.rx.items) { tableView, row, data in
-                let cell = tableView.dequeueReusableCell(withIdentifier: DetailListCell.identifier, for: IndexPath(row: row, section: 0)) as! DetailListCell
+                guard let cell = tableView.dequeueReusableCell(
+                    withIdentifier: DetailListCell.identifier,
+                    for: IndexPath(row: row, section: 0)
+                ) as? DetailListCell else {
+                    return UITableViewCell()
+                }
                 cell.setData(data)
                 return cell
             }
@@ -75,7 +80,7 @@ class LocationInformationViewController: UIViewController {
         title = "내 주변 편의점 찾기"
         view.backgroundColor = .systemBackground
         
-        mapView.currentLocationTrackingMode = .onWithoutHeading
+        mapView.currentLocationTrackingMode = .onWithoutHeadingWithoutMapMoving
         
         currentLocationButton.setImage(UIImage(systemName: "location.fill"), for: .normal)
         currentLocationButton.backgroundColor = .white
@@ -92,6 +97,7 @@ class LocationInformationViewController: UIViewController {
         
         mapView.snp.makeConstraints {
             $0.top.leading.trailing.equalTo(view.safeAreaLayoutGuide)
+            $0.bottom.equalTo(view.snp.centerY).offset(100)
         }
         
         currentLocationButton.snp.makeConstraints {
@@ -103,7 +109,7 @@ class LocationInformationViewController: UIViewController {
         detailList.snp.makeConstraints {
             $0.centerX.leading.trailing.equalToSuperview()
             $0.bottom.equalTo(view.safeAreaLayoutGuide).inset(8)
-            $0.top.equalTo(mapView.snp.top)
+            $0.top.equalTo(mapView.snp.bottom)
         }
     }
 }
@@ -131,18 +137,17 @@ extension LocationInformationViewController: MTMapViewDelegate {
         #endif
     }
     
-    // 맵을 움직이는 행동이 끝났을 때 맵의 센터포인트를 전달해주는 델리게이트
     func mapView(_ mapView: MTMapView!, finishedMapMoveAnimation mapCenterPoint: MTMapPoint!) {
-         viewModel.mapCenterPoint.accept(mapCenterPoint)
+        viewModel.mapCenterPoint.accept(mapCenterPoint)
     }
     
     func mapView(_ mapView: MTMapView!, selectedPOIItem poiItem: MTMapPOIItem!) -> Bool {
-         viewModel.selectPOIItem.accept(poiItem)
+        viewModel.selectPOIItem.accept(poiItem)
         return false
     }
     
     func mapView(_ mapView: MTMapView!, failedUpdatingCurrentLocationWithError error: Error!) {
-         viewModel.mapViewError.accept(error.localizedDescription)
+        viewModel.mapViewError.accept(error.localizedDescription)
     }
 }
 
@@ -181,12 +186,15 @@ extension Reactive where Base: LocationInformationViewController {
                 .enumerated()
                 .map { offset, point -> MTMapPOIItem in
                     let mapPOIItem = MTMapPOIItem()
+                    
                     mapPOIItem.mapPoint = point
-                    mapPOIItem.markerType = .redPin
+                    mapPOIItem.markerType = .yellowPin
                     mapPOIItem.showAnimationType = .springFromGround
                     mapPOIItem.tag = offset
+                    
                     return mapPOIItem
                 }
+            
             base.mapView.removeAllPOIItems()
             base.mapView.addPOIItems(items)
         }
