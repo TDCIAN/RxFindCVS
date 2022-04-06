@@ -10,6 +10,7 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    let viewModel = LocationInformationViewModel()
 
     func scene(
         _ scene: UIScene,
@@ -19,7 +20,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         window?.backgroundColor = .systemBackground
-        let rootViewController = ViewController()
+        let rootViewController = LocationInformationViewController()
+//        rootViewController.bind(viewModel)
         window?.rootViewController = UINavigationController(rootViewController: rootViewController)
         window?.makeKeyAndVisible()
     }
